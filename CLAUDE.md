@@ -1,4 +1,4 @@
-# english-conversation — 나도 영어회화 (1:1 전화영어·화상영어)
+# english-conversation — 나도 잉글리쉬 (1:1 전화영어·화상영어)
 
 - 저장소: `x26589334-cpu/english-conversation` (main) · GitHub Pages · 도메인 **아직 없음** → https://x26589334-cpu.github.io/english-conversation/
 - 만든 날: 2026-10-10. 참고한 사이트: plcenter.co.kr(파워잉글리시) — 구조(배너 슬라이드 → About+숫자 → 진행 과정 → Why 3칸 → 서비스 탭 → 추천 과정 4칸 → 후기 → FAQ → 상담 → 푸터)와 색(하늘 `#00baff` + 주황 `#ffa01e`)만 참고. 문구·코드는 새로 썼다.
