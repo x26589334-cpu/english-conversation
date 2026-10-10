@@ -2,7 +2,8 @@
 
 - 저장소: `x26589334-cpu/english-conversation` (main) · GitHub Pages · 도메인 **아직 없음** → https://x26589334-cpu.github.io/english-conversation/
 - 만든 날: 2026-10-10. 참고한 사이트: plcenter.co.kr(파워잉글리시) — 구조(배너 슬라이드 → About+숫자 → 진행 과정 → Why 3칸 → 서비스 탭 → 추천 과정 4칸 → 후기 → FAQ → 상담 → 푸터)와 색(하늘 `#00baff` + 주황 `#ffa01e`)만 참고. 문구·코드는 새로 썼다.
-- 한 페이지 사이트. 파일: `index.html` · `style.css` · `script.js`(슬라이드·탭·FAQ·등장효과) · `form.js`(상담폼) · `analytics.js`(GA4, 아직 ID 없음).
+- 한 페이지 사이트. 파일: `index.html` · `style.css` · `script.js`(배너·후기 슬라이드, 탭, FAQ, 등장효과) · `form.js`(상담폼) · `analytics.js`(GA4, 아직 ID 없음) · `img/`(사진 12장).
+- **사진은 전부 Unsplash 무료 사진**(Unsplash License: 상업 사용·출처 표기 불필요). 2026-10-10 디자인 2차 — 참고 사이트처럼 사진 배너·하늘색 숫자 띠·테두리 상자·말풍선 후기·남색 푸터·하단 고정 배너로 재구성. 글꼴: 제목 Pretendard, 본문 나눔고딕(Google Fonts), 아이콘 Font Awesome 6(cdnjs).
 
 ## 공통 규칙 (홈 `~/CLAUDE.md` 와 같음)
 - 전화번호는 **010-6832-1994** 하나(다른 사이트와 공통). 사업자 정보(상호·대표·사업자번호·주소)는 **넣지 않는다**(사업자 없음, 사용자 방침).

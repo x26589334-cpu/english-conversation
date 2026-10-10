@@ -9,233 +9,250 @@
 <meta property="og:title" content="나도 잉글리쉬 | 1:1 전화영어·화상영어">
 <meta property="og:description" content="매일 25분, 원어민과 1:1로 말하는 영어. 무료 레벨테스트 후 맞춤 커리큘럼으로 시작하세요.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="img/hero-1.jpg">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2300baff'/><text y='70' x='50' font-size='56' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>E</text></svg>">
 <script src="analytics.js" defer></script>
 </head>
 <body id="top">
 
-<!-- ── 헤더 ───────────────────────────────── -->
+<!-- ── 상단 바 + 헤더 ─────────────────────── -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span><i class="fa fa-phone"></i> 상담 010-6832-1994 &nbsp;|&nbsp; 09:00 – 21:00 연중무휴</span>
+    <span class="topbar__right"><i class="fa fa-comment-dots"></i> 무료 레벨테스트는 전화·문자로도 신청됩니다</span>
+  </div>
+</div>
 <header class="header" id="header">
-  <div class="wrap header__inner">
+  <nav class="container header__inner">
     <a href="#top" class="logo" aria-label="나도 잉글리쉬 홈">
-      <span class="logo__mark">E</span>
+      <i class="fa fa-earth-americas logo__icon"></i>
       <span class="logo__text">나도 <em>잉글리쉬</em></span>
     </a>
-    <nav class="nav" id="nav">
+    <div class="nav" id="nav">
       <a href="#about">소개</a>
       <a href="#process">수업 방식</a>
+      <a href="#feature">특징</a>
       <a href="#services">프로그램</a>
       <a href="#courses">추천 과정</a>
       <a href="#reviews">후기</a>
-      <a href="#faq">자주 묻는 질문</a>
-    </nav>
-    <div class="header__cta">
-      <a href="tel:01068321994" class="btn btn--ghost btn--sm">📞 010-6832-1994</a>
-      <a href="#apply" class="btn btn--primary btn--sm">무료 레벨테스트</a>
+      <a href="#faq">FAQ</a>
     </div>
+    <a href="#apply" class="btn btn--primary btn--pill header__btn">상담신청 <i class="fa fa-arrow-right"></i></a>
     <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-  </div>
+  </nav>
 </header>
 
-<!-- ── 히어로 슬라이드 ─────────────────────── -->
+<!-- ── 메인 배너 슬라이드 ─────────────────── -->
 <section class="hero" id="hero" aria-label="메인 배너">
   <div class="hero__track" id="heroTrack">
-    <div class="hero__slide hero__slide--1 is-active">
-      <div class="wrap hero__inner">
-        <p class="hero__eyebrow">1:1 전화영어 &amp; 화상영어</p>
-        <h1>매일 25분,<br>원어민과 <span>1:1로 말하는</span> 영어</h1>
-        <p class="hero__sub">레벨테스트 결과에 맞춰 커리큘럼을 짜고, 담당 강사가 매 수업 피드백을 남깁니다.<br>출퇴근길에도, 아이 학원 시간에도 — 시간과 장소에 구애받지 않습니다.</p>
-        <div class="hero__btns">
-          <a href="#apply" class="btn btn--primary btn--lg">무료 레벨테스트 신청</a>
-          <a href="#process" class="btn btn--white btn--lg">수업 방식 보기</a>
+    <div class="hero__slide is-active">
+      <img src="img/hero-1.jpg" alt="" loading="eager">
+      <div class="hero__caption">
+        <div class="container">
+          <h5 class="hero__eyebrow">대한민국 1:1 전화&amp;화상영어</h5>
+          <h1>나도 잉글리쉬</h1>
+          <p class="hero__sub">매일 25분, 원어민과 1:1로 말하는 영어<br>레벨테스트로 시작점을 잡고 나에게 맞는 커리큘럼으로</p>
+          <a href="#apply" class="btn btn--primary btn--pill btn--lg">무료 레벨테스트 신청 <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
-    <div class="hero__slide hero__slide--2">
-      <div class="wrap hero__inner">
-        <p class="hero__eyebrow">성인 · 주니어 · 비즈니스 · 시니어</p>
-        <h1>목적이 다르면<br>수업도 <span>달라야</span> 합니다</h1>
-        <p class="hero__sub">여행 회화부터 회의 영어, 초등 파닉스까지. 같은 교재로 모두를 가르치지 않습니다.<br>목표·레벨·수업 횟수를 직접 고르는 맞춤형 1:1 수업.</p>
-        <div class="hero__btns">
-          <a href="#services" class="btn btn--primary btn--lg">프로그램 살펴보기</a>
-          <a href="tel:01068321994" class="btn btn--white btn--lg">전화 상담 010-6832-1994</a>
+    <div class="hero__slide">
+      <img src="img/hero-2.jpg" alt="" loading="lazy">
+      <div class="hero__caption">
+        <div class="container">
+          <h5 class="hero__eyebrow">성인 · 주니어 · 비즈니스 · 시니어</h5>
+          <h1>목적이 다르면<br>수업도 달라야 합니다</h1>
+          <p class="hero__sub">여행 회화부터 회의 영어, 초등 파닉스까지<br>목표·레벨·수업 횟수를 직접 고르는 DIY 맞춤형 1:1 수업</p>
+          <a href="#services" class="btn btn--primary btn--pill btn--lg">프로그램 보기 <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
-    <div class="hero__slide hero__slide--3">
-      <div class="wrap hero__inner">
-        <p class="hero__eyebrow">OPIc · TOEIC Speaking · IELTS</p>
-        <h1>시험 점수도<br><span>말하기</span>로 올립니다</h1>
-        <p class="hero__sub">모의 문항으로 수업하고, 녹음 피드백으로 발음·문장 구조를 고칩니다.<br>목표 등급과 시험 날짜를 알려주시면 역산해서 계획을 세웁니다.</p>
-        <div class="hero__btns">
-          <a href="#courses" class="btn btn--primary btn--lg">시험 대비 과정</a>
-          <a href="#apply" class="btn btn--white btn--lg">무료 상담 신청</a>
+    <div class="hero__slide">
+      <img src="img/hero-3.jpg" alt="" loading="lazy">
+      <div class="hero__caption">
+        <div class="container">
+          <h5 class="hero__eyebrow">OPIc · TOEIC Speaking · IELTS</h5>
+          <h1>시험 점수도<br>말하기로 올립니다</h1>
+          <p class="hero__sub">모의 문항으로 수업하고 녹음 피드백으로 발음·문장 구조를 교정<br>목표 등급과 시험 날짜를 알려주시면 역산해서 계획을 세웁니다</p>
+          <a href="#courses" class="btn btn--primary btn--pill btn--lg">시험 대비 과정 <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </div>
-  <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="이전 배너">‹</button>
-  <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="다음 배너">›</button>
+  <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="이전 배너"><i class="fa fa-chevron-left"></i></button>
+  <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="다음 배너"><i class="fa fa-chevron-right"></i></button>
   <div class="hero__dots" id="heroDots"></div>
 </section>
 
 <!-- ── About Us ───────────────────────────── -->
-<section class="section about" id="about">
-  <div class="wrap about__grid">
-    <div class="about__text">
-      <p class="eyebrow">About Us</p>
-      <h2>말하기 연습 시간을 늘리는 것,<br>영어회화는 결국 그게 전부입니다</h2>
-      <p class="lead">나도 잉글리쉬는 성인·주니어를 위한 1:1 전화·화상 영어회화 서비스입니다. 수업 시간의 대부분을 수강생이 말하도록 설계하고, 강사는 듣고 고쳐주는 역할에 집중합니다.</p>
-      <div class="tabs" id="aboutTabs">
-        <div class="tabs__nav" role="tablist">
-          <button class="tab is-active" data-tab="video" role="tab">화상영어</button>
-          <button class="tab" data-tab="phone" role="tab">전화영어</button>
+<section class="section" id="about">
+  <div class="container row row--center">
+    <div class="col">
+      <img class="img-rounded" src="img/about.jpg" alt="화상영어 수업 모습">
+    </div>
+    <div class="col">
+      <p class="label">About Us</p>
+      <h2 class="title">말하기 연습 시간을 늘리는 것,<br>영어회화는 결국 그게 전부입니다</h2>
+      <p class="mb-4">나도 잉글리쉬는 성인·주니어를 위한 1:1 전화·화상 영어회화 서비스입니다. 수업 시간의 대부분을 수강생이 말하도록 설계하고, 강사는 듣고 고쳐주는 역할에 집중합니다.</p>
+      <div class="box">
+        <div class="tabs" id="aboutTabs">
+          <div class="tabs__nav" role="tablist">
+            <button class="tab is-active" data-tab="video" role="tab">화상</button>
+            <button class="tab" data-tab="phone" role="tab">전화</button>
+          </div>
+          <ul class="tabs__panel list is-active" data-panel="video">
+            <li>화면으로 교재·메모를 함께 보는 25분 / 50분 집중 수업</li>
+            <li>수업 녹화본과 강사 코멘트를 수업 후 확인</li>
+            <li>주니어 또는 초급자에게 추천</li>
+          </ul>
+          <ul class="tabs__panel list" data-panel="phone">
+            <li>10분 · 20분 짧은 수업으로 매일 말하는 습관</li>
+            <li>듣기·말하기 레벨 상승에 최대 효과</li>
+            <li>시공간 제약 없이, 언제 어디서나!</li>
+          </ul>
         </div>
-        <ul class="tabs__panel check is-active" data-panel="video">
-          <li>화면으로 교재·메모를 함께 보며 진행하는 25분 / 50분 수업</li>
-          <li>수업 녹화본과 강사 코멘트를 수업 후 확인</li>
-          <li>주니어·초급자에게 추천 (표정·자료로 이해가 쉬움)</li>
-        </ul>
-        <ul class="tabs__panel check" data-panel="phone">
-          <li>10분 · 20분 짧은 수업으로 매일 꾸준히 말하는 습관</li>
-          <li>듣기·말하기에만 집중 — 통근·이동 중에도 가능</li>
-          <li>직장인·시간이 불규칙한 분에게 추천</li>
-        </ul>
       </div>
     </div>
-    <div class="about__stats">
-      <div class="stat"><strong>1:1</strong><span>강사 한 명이 한 명만<br>담당하는 수업</span></div>
-      <div class="stat"><strong>25<small>분</small></strong><span>하루 기본 수업 시간<br>(50분·10분도 선택)</span></div>
-      <div class="stat"><strong>주 2~5<small>회</small></strong><span>생활 패턴에 맞춰<br>횟수 선택</span></div>
-      <div class="stat"><strong>10<small>단계</small></strong><span>레벨테스트로 시작점을<br>정확히 잡습니다</span></div>
+  </div>
+</section>
+
+<!-- ── 숫자 띠 (Facts) ───────────────────── -->
+<section class="facts">
+  <div class="container facts__grid">
+    <div class="fact"><i class="fa fa-user-check"></i><strong>1:1</strong><span>강사 한 명이 한 명만 담당</span><hr></div>
+    <div class="fact"><i class="fa fa-clock"></i><strong>25<small>분</small></strong><span>하루 기본 수업 시간</span><hr></div>
+    <div class="fact"><i class="fa fa-calendar-check"></i><strong>주 2~5<small>회</small></strong><span>생활 패턴에 맞춰 선택</span><hr></div>
+    <div class="fact"><i class="fa fa-award"></i><strong>10<small>단계</small></strong><span>레벨테스트로 정확한 시작점</span><hr></div>
+  </div>
+</section>
+
+<!-- ── 수업 방식 (3 카드) ─────────────────── -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="head">
+      <p class="label">How It Works</p>
+      <h2 class="title">수업은 이렇게 진행됩니다</h2>
+    </div>
+    <div class="grid grid--3">
+      <article class="pcard">
+        <div class="pcard__img"><img src="img/laptop.jpg" alt=""><span class="pcard__num">01</span></div>
+        <h4>무료 레벨테스트</h4>
+        <p>15분 통화로 현재 말하기 수준과 목표를 확인하고 결과표를 드립니다. 강사·시간은 결과에 맞춰 배정합니다.</p>
+      </article>
+      <article class="pcard">
+        <div class="pcard__img"><img src="img/cafe.jpg" alt=""><span class="pcard__num">02</span></div>
+        <h4>매일 1:1 수업</h4>
+        <p>교재 + 자유 대화. 수업 중 틀린 문장은 강사가 채팅·메모로 바로 고쳐줍니다. 수업 시간은 10·25·50분 중 선택.</p>
+      </article>
+      <article class="pcard">
+        <div class="pcard__img"><img src="img/lecture.jpg" alt=""><span class="pcard__num">03</span></div>
+        <h4>피드백 &amp; 월간 리포트</h4>
+        <p>수업마다 코멘트, 한 달마다 레벨 변화 리포트. 필요하면 강사·교재를 바꿉니다. 결석은 보충 수업으로.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ── 수업 진행 과정 ─────────────────────── -->
-<section class="section section--soft process" id="process">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">How It Works</p>
-      <h2>수업은 이렇게 진행됩니다</h2>
-      <p class="lead">신청부터 첫 수업까지 보통 2~3일. 복잡한 절차 없이 바로 시작합니다.</p>
+<!-- ── Why Choosing Us (Feature) ───────────── -->
+<section class="section feature" id="feature">
+  <div class="container row row--center">
+    <div class="col">
+      <p class="label">Why Choosing Us!</p>
+      <h2 class="title">오직 나만을 위한,<br>확실한 1:1 맞춤 솔루션!</h2>
+      <p class="mb-4">레벨과 목표를 고려한 맞춤 커리큘럼으로 체계적인 수업은 물론, 꾸준히 이어 갈 수 있도록 담당 강사와 상담 매니저가 함께 관리합니다. 강사·교재·관리 세 가지가 같이 돌아가야 영어가 늡니다.</p>
+      <a href="#apply" class="btn btn--primary btn--pill">무료 레벨테스트 신청 <i class="fa fa-arrow-right"></i></a>
     </div>
-    <ol class="flow">
-      <li><span class="flow__num">01</span><h3>무료 레벨테스트</h3><p>15분 통화로 현재 말하기 수준과 목표를 확인합니다. 결과표를 드립니다.</p></li>
-      <li><span class="flow__num">02</span><h3>강사·시간 배정</h3><p>목표(회화·비즈니스·시험)와 성향에 맞는 강사를 추천하고 수업 시간을 고정합니다.</p></li>
-      <li><span class="flow__num">03</span><h3>매일 1:1 수업</h3><p>교재 + 자유 대화. 수업 중 틀린 문장은 강사가 채팅·메모로 바로 고쳐줍니다.</p></li>
-      <li><span class="flow__num">04</span><h3>피드백 &amp; 월간 리포트</h3><p>수업마다 코멘트, 한 달마다 레벨 변화 리포트. 필요하면 강사·교재를 바꿉니다.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ── Why Choosing Us ────────────────────── -->
-<section class="section why" id="why">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">Why Choosing Us</p>
-      <h2>왜 나도 잉글리쉬인가요?</h2>
-      <p class="lead">강사·교재·관리 세 가지가 함께 돌아가야 영어가 늡니다. 하나라도 빠지면 '한 달 하다 말았다'가 됩니다.</p>
-    </div>
-    <div class="cards cards--3">
-      <article class="card">
-        <div class="card__icon">🎯</div>
-        <h3>DIY 맞춤형 커리큘럼</h3>
-        <ul class="check">
-          <li>레벨테스트 결과로 교재·주제 설계</li>
-          <li>회화 · 비즈니스 · 시험 중 목표별 과정</li>
-          <li>수업 시간(10/25/50분)·횟수 직접 선택</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card__icon">👩‍🏫</div>
-        <h3>검증된 1:1 전담 강사</h3>
-        <ul class="check">
-          <li>원어민 &amp; 한국어 가능 이중언어 강사</li>
-          <li>교육 경력·발음·수업 태도 면접 후 배정</li>
-          <li>맞지 않으면 강사 교체 — 횟수 제한 없음</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card__icon">📊</div>
-        <h3>학습 관리 시스템</h3>
-        <ul class="check">
-          <li>수업마다 강사 코멘트·교정 문장 기록</li>
-          <li>월간 레벨 리포트로 변화를 숫자로 확인</li>
-          <li>결석·보충 수업을 상담 매니저가 관리</li>
-        </ul>
-      </article>
+    <div class="col feature__boxes">
+      <div class="feature__col">
+        <div class="fbox">
+          <i class="fa fa-check fbox__icon"></i>
+          <h4>DIY 맞춤식 학습</h4>
+          <p><i class="fa fa-angle-right"></i> 레벨테스트 결과로 교재·주제 설계</p>
+          <p><i class="fa fa-angle-right"></i> 회화 · 비즈니스 · 시험 목표별 과정</p>
+          <p><i class="fa fa-angle-right"></i> 수업 시간·횟수 직접 선택</p>
+        </div>
+        <div class="fbox">
+          <i class="fa fa-check fbox__icon"></i>
+          <h4>검증된 1:1 전담 강사</h4>
+          <p><i class="fa fa-angle-right"></i> 원어민 &amp; 한국어 가능 이중언어 강사</p>
+          <p><i class="fa fa-angle-right"></i> 경력·발음·수업 태도 면접 후 배정</p>
+          <p><i class="fa fa-angle-right"></i> 강사 교체 횟수 제한 없음</p>
+        </div>
+      </div>
+      <div class="feature__col feature__col--mid">
+        <div class="fbox">
+          <i class="fa fa-check fbox__icon"></i>
+          <h4>밀착 학습 관리</h4>
+          <p><i class="fa fa-angle-right"></i> 수업마다 강사 코멘트·교정 문장</p>
+          <p><i class="fa fa-angle-right"></i> 월간 레벨 리포트로 변화 확인</p>
+          <p><i class="fa fa-angle-right"></i> 결석·보충을 상담 매니저가 관리</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ── Our Services (대상별 프로그램) ────────── -->
-<section class="section section--soft services" id="services">
-  <div class="wrap">
+<section class="section service" id="services">
+  <div class="container">
     <div class="head">
-      <p class="eyebrow">Our Services</p>
-      <h2>대상별 프로그램</h2>
-      <p class="lead">성인 · 주니어 · 비즈니스 · 시니어 — 지금 필요한 영어를 고르세요.</p>
+      <p class="label">Our Services</p>
+      <h2 class="title">성인/주니어/비즈니스/시니어,<br>나에게 필요한 영어를 선택하세요!</h2>
     </div>
     <div class="svc" id="svcTabs">
       <div class="svc__nav" role="tablist">
-        <button class="svc__tab is-active" data-tab="adult" role="tab"><span class="svc__ico">💬</span><span><b>성인 영어회화</b><small>일상 · 여행 · 프리토킹</small></span></button>
-        <button class="svc__tab" data-tab="junior" role="tab"><span class="svc__ico">🧒</span><span><b>주니어 화상영어</b><small>초등 · 중등</small></span></button>
-        <button class="svc__tab" data-tab="biz" role="tab"><span class="svc__ico">💼</span><span><b>비즈니스 영어</b><small>회의 · 이메일 · 발표</small></span></button>
-        <button class="svc__tab" data-tab="senior" role="tab"><span class="svc__ico">🌿</span><span><b>시니어 영어회화</b><small>천천히 · 편안하게</small></span></button>
+        <button class="svc__tab is-active" data-tab="adult" role="tab"><i class="fa fa-comments"></i><h5>성인 영어회화</h5></button>
+        <button class="svc__tab" data-tab="junior" role="tab"><i class="fa fa-child-reaching"></i><h5>주니어 화상영어</h5></button>
+        <button class="svc__tab" data-tab="biz" role="tab"><i class="fa fa-briefcase"></i><h5>비즈니스 영어</h5></button>
+        <button class="svc__tab" data-tab="senior" role="tab"><i class="fa fa-mug-hot"></i><h5>시니어 영어회화</h5></button>
       </div>
       <div class="svc__panels">
         <div class="svc__panel is-active" data-panel="adult">
-          <div class="svc__visual svc__visual--adult"><span>Everyday<br>English</span></div>
+          <div class="svc__img"><img src="img/cafe.jpg" alt=""></div>
           <div class="svc__body">
-            <h3>말문이 막히는 순간을 없애는 성인 영어회화</h3>
-            <ul class="check">
-              <li>영어+한국어 가능 이중언어 강사로 초급도 부담 없이 시작</li>
-              <li>자유 대화 50% + 교재 50%, 틀린 문장은 바로 교정</li>
-              <li>여행·해외 생활·취미 등 내 상황을 주제로 수업</li>
-            </ul>
-            <a href="#apply" class="btn btn--line">무료 레벨테스트 →</a>
+            <h3>말문이 막히는 순간을 없애는<br>1:1 맞춤 성인 영어회화!</h3>
+            <p class="check"><i class="fa fa-check"></i> 영어+한국어 가능 이중언어 강사로 초급도 부담 없이</p>
+            <p class="check"><i class="fa fa-check"></i> 자유 대화 50% + 교재 50%, 틀린 문장은 바로 교정</p>
+            <p class="check"><i class="fa fa-check"></i> 여행·해외 생활·취미 등 내 상황을 주제로 수업</p>
+            <a href="#apply" class="btn btn--primary btn--pill">Read More <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="svc__panel" data-panel="junior">
-          <div class="svc__visual svc__visual--junior"><span>Junior<br>English</span></div>
+          <div class="svc__img"><img src="img/junior.jpg" alt=""></div>
           <div class="svc__body">
-            <h3>원어민 선생님과 매일 만나는 주니어 화상영어</h3>
-            <ul class="check">
-              <li>파닉스 · 리딩 · 스피킹 단계별 교재, 학년보다 레벨 기준</li>
-              <li>수업 녹화본 제공 — 부모님이 수업 모습을 직접 확인</li>
-              <li>학교 영어 말하기 수행평가·발표 준비 병행</li>
-            </ul>
-            <a href="#apply" class="btn btn--line">무료 체험 신청 →</a>
+            <h3>원어민 선생님과 매일 만나는<br>초·중등 주니어 화상영어!</h3>
+            <p class="check"><i class="fa fa-check"></i> 파닉스 · 리딩 · 스피킹 단계별 교재, 학년보다 레벨 기준</p>
+            <p class="check"><i class="fa fa-check"></i> 수업 녹화본 제공 — 부모님이 수업 모습을 직접 확인</p>
+            <p class="check"><i class="fa fa-check"></i> 학교 영어 말하기 수행평가·발표 준비 병행</p>
+            <a href="#apply" class="btn btn--primary btn--pill">Read More <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="svc__panel" data-panel="biz">
-          <div class="svc__visual svc__visual--biz"><span>Business<br>English</span></div>
+          <div class="svc__img"><img src="img/business.jpg" alt=""></div>
           <div class="svc__body">
-            <h3>내 업무 자료로 수업하는 비즈니스 영어</h3>
-            <ul class="check">
-              <li>회의 · 전화 · 이메일 · 발표 등 상황별 표현 집중</li>
-              <li>실제 업무 문서·발표 자료를 가져와 수업 (비밀 유지)</li>
-              <li>출근 전 · 점심 · 퇴근 후 고정 시간, 전화영어 가능</li>
-            </ul>
-            <a href="#apply" class="btn btn--line">상담 신청 →</a>
+            <h3>내 업무 자료로 수업하는<br>실전 비즈니스 영어!</h3>
+            <p class="check"><i class="fa fa-check"></i> 회의 · 전화 · 이메일 · 발표 등 상황별 표현 집중</p>
+            <p class="check"><i class="fa fa-check"></i> 실제 업무 문서·발표 자료로 리허설 (비밀 유지)</p>
+            <p class="check"><i class="fa fa-check"></i> 출근 전 · 점심 · 퇴근 후 고정 시간, 전화영어 가능</p>
+            <a href="#apply" class="btn btn--primary btn--pill">Read More <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="svc__panel" data-panel="senior">
-          <div class="svc__visual svc__visual--senior"><span>Senior<br>English</span></div>
+          <div class="svc__img"><img src="img/senior.jpg" alt=""></div>
           <div class="svc__body">
-            <h3>천천히, 편안하게 — 시니어 영어회화</h3>
-            <ul class="check">
-              <li>속도를 늦추고 큰 글자 자료로 진행하는 50~60대+ 전용 과정</li>
-              <li>해외여행 · 손주와 대화 · 영어 성경·노래 등 원하는 주제</li>
-              <li>한국어 가능 강사 배정으로 막힐 때 바로 설명</li>
-            </ul>
-            <a href="#apply" class="btn btn--line">상담 신청 →</a>
+            <h3>천천히, 편안하게<br>50~60대+ 시니어 영어회화!</h3>
+            <p class="check"><i class="fa fa-check"></i> 속도를 늦추고 큰 글자 자료로 진행하는 전용 과정</p>
+            <p class="check"><i class="fa fa-check"></i> 해외여행 · 손주와 대화 · 영어 노래 등 원하는 주제</p>
+            <p class="check"><i class="fa fa-check"></i> 한국어 가능 강사 배정으로 막힐 때 바로 설명</p>
+            <a href="#apply" class="btn btn--primary btn--pill">Read More <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -244,37 +261,32 @@
 </section>
 
 <!-- ── Best Courses ───────────────────────── -->
-<section class="section courses" id="courses">
-  <div class="wrap">
+<section class="section" id="courses">
+  <div class="container">
     <div class="head">
-      <p class="eyebrow">Best Courses</p>
-      <h2>추천 과정</h2>
-      <p class="lead">레벨테스트 후 아래 중 하나로 시작합니다. 과정 중간에 바꿔도 됩니다.</p>
+      <p class="label">Best Courses</p>
+      <h2 class="title">나에게 딱 맞는 커리큘럼을<br>자유롭게 선택하세요!</h2>
     </div>
-    <div class="cards cards--4">
+    <div class="grid grid--4">
       <article class="course">
-        <div class="course__band course__band--1">기초 회화</div>
-        <h3>Basic Speaking</h3>
-        <p>알파벳·인사부터 다시. 짧은 문장을 소리 내어 말하는 습관을 만드는 초급 과정. 이중언어 강사 배정.</p>
-        <span class="course__tag">초급 · 25분</span>
+        <div class="course__img"><img src="img/laptop.jpg" alt=""></div>
+        <h4>기초 회화</h4>
+        <p>인사·짧은 문장부터 소리 내어 말하는 습관을 만드는 초급 과정. 이중언어 강사 배정.</p>
       </article>
       <article class="course">
-        <div class="course__band course__band--2">일상 회화</div>
-        <h3>Daily Conversation</h3>
-        <p>말하기·듣기·읽기·쓰기 네 영역을 교재 한 권으로. 여행·쇼핑·병원·약속 등 실제 상황 중심.</p>
-        <span class="course__tag">초중급 · 25분</span>
+        <div class="course__img"><img src="img/group.jpg" alt=""></div>
+        <h4>일상 회화</h4>
+        <p>말하기/듣기/읽기/쓰기 4영역을 교재 한 권으로. 여행·쇼핑·병원·약속 등 실제 상황 중심.</p>
       </article>
       <article class="course">
-        <div class="course__band course__band--3">비즈니스 회화</div>
-        <h3>Business English</h3>
-        <p>회의·협상·이메일·발표. 업계 용어와 격식 있는 표현, 전화·화상 회의 대응을 롤플레이로 훈련.</p>
-        <span class="course__tag">중급 이상 · 25/50분</span>
+        <div class="course__img"><img src="img/business.jpg" alt=""></div>
+        <h4>비즈니스 회화</h4>
+        <p>회의·협상·이메일·발표. 격식 있는 표현과 화상 회의 대응을 롤플레이로 훈련.</p>
       </article>
       <article class="course">
-        <div class="course__band course__band--4">시험 대비</div>
-        <h3>OPIc · TOEIC Speaking</h3>
-        <p>OPIc, 토익스피킹, IELTS 스피킹 모의 문항으로 수업. 녹음 피드백으로 답변 구조·발음·시간 배분 교정.</p>
-        <span class="course__tag">목표 등급별 · 50분</span>
+        <div class="course__img"><img src="img/friends.jpg" alt=""></div>
+        <h4>시험 대비</h4>
+        <p>OPIc, 토익스피킹, IELTS 스피킹 모의 문항 수업. 녹음 피드백으로 답변 구조·발음 교정.</p>
       </article>
     </div>
   </div>
@@ -282,30 +294,34 @@
 
 <!-- ── Best Reviews ───────────────────────── -->
 <!-- ⚠ 아래 후기는 사이트 개설용 예시 문구다. 실제 수강 후기를 받으면 교체할 것 (CLAUDE.md 참고) -->
-<section class="section section--soft reviews" id="reviews">
-  <div class="wrap">
+<section class="section" id="reviews">
+  <div class="container">
     <div class="head">
-      <p class="eyebrow">Best Reviews</p>
-      <h2>수강생 이야기</h2>
-      <p class="lead">이런 분들이 이렇게 시작합니다. 실제 수강 후기는 수강생 동의를 받아 이곳에 더해 갑니다.</p>
+      <p class="label">Best Reviews</p>
+      <h2 class="title">수강생들의<br>리얼한 학습 후기</h2>
     </div>
-    <div class="cards cards--3">
-      <article class="review"><p>"출근길 20분 전화영어를 석 달째 하고 있어요. 처음엔 'Yes, no'만 했는데 지금은 주말에 뭐 했는지 설명을 해요. 선생님이 틀린 문장을 문자로 보내주시는 게 제일 좋아요."</p><div class="review__who"><span class="avatar">김</span><div><b>김○○</b><small>직장인 · 전화영어 25분</small></div></div></article>
-      <article class="review"><p>"아이가 화상 수업을 기다립니다. 선생님이 아이 이름을 부르면서 말을 많이 시켜 주시고, 녹화본으로 아이가 어떻게 대답하는지 볼 수 있어서 안심이 돼요."</p><div class="review__who"><span class="avatar">박</span><div><b>박○○ 학부모</b><small>초등 4학년 · 주니어 화상영어</small></div></div></article>
-      <article class="review"><p>"해외 고객과 화상 회의가 잦아 신청했어요. 제 발표 자료로 리허설을 하고 질문 대응을 연습하는 수업이라 바로 써먹을 수 있었습니다."</p><div class="review__who"><span class="avatar">이</span><div><b>이○○</b><small>마케팅 팀장 · 비즈니스 영어</small></div></div></article>
-      <article class="review"><p>"OPIc IM2에서 IH 목표였는데 두 달 수업 후 IH 받았습니다. 매 수업 녹음을 듣고 'um…'이 줄어드는 게 눈에 보여서 동기가 됐어요."</p><div class="review__who"><span class="avatar">최</span><div><b>최○○</b><small>취업 준비 · OPIc 대비</small></div></div></article>
-      <article class="review"><p>"예순이 넘어 시작했는데 선생님이 천천히 한국어로도 설명해 주셔서 부담이 없습니다. 내년 딸 가족 보러 캐나다 갈 때 공항에서 말해 보려고요."</p><div class="review__who"><span class="avatar">정</span><div><b>정○○</b><small>60대 · 시니어 영어회화</small></div></div></article>
-      <article class="review"><p>"학원 다닐 땐 한 시간에 세 마디 하면 많이 한 거였는데, 1:1은 25분 내내 제가 말해야 해서 끝나면 진이 빠져요. 그런데 그게 느는 거더라고요."</p><div class="review__who"><span class="avatar">한</span><div><b>한○○</b><small>대학생 · 일상 회화</small></div></div></article>
+    <div class="tcar" id="tcar">
+      <div class="tcar__page is-active">
+        <div class="tItem"><div class="tItem__text"><span class="tItem__q"><i class="fa fa-quote-left"></i></span><p>출근길 20분 전화영어를 석 달째 하고 있어요. 처음엔 'Yes, no'만 했는데 지금은 주말에 뭐 했는지 설명을 해요. 선생님이 틀린 문장을 문자로 보내주시는 게 제일 좋아요.</p></div><div class="tItem__who"><span class="tItem__avatar">김</span><h5>김○○</h5><small>직장인 · 전화영어 25분</small></div></div>
+        <div class="tItem"><div class="tItem__text"><span class="tItem__q"><i class="fa fa-quote-left"></i></span><p>아이가 화상 수업을 기다립니다. 선생님이 아이 이름을 부르면서 말을 많이 시켜 주시고, 녹화본으로 아이가 어떻게 대답하는지 볼 수 있어서 안심이 돼요.</p></div><div class="tItem__who"><span class="tItem__avatar">박</span><h5>박○○ 학부모</h5><small>초등 4학년 · 주니어 화상영어</small></div></div>
+        <div class="tItem"><div class="tItem__text"><span class="tItem__q"><i class="fa fa-quote-left"></i></span><p>해외 고객과 화상 회의가 잦아 신청했어요. 제 발표 자료로 리허설을 하고 질문 대응을 연습하는 수업이라 바로 써먹을 수 있었습니다.</p></div><div class="tItem__who"><span class="tItem__avatar">이</span><h5>이○○</h5><small>마케팅 팀장 · 비즈니스 영어</small></div></div>
+      </div>
+      <div class="tcar__page">
+        <div class="tItem"><div class="tItem__text"><span class="tItem__q"><i class="fa fa-quote-left"></i></span><p>OPIc IM2에서 IH 목표였는데 두 달 수업 후 IH 받았습니다. 매 수업 녹음을 듣고 'um…'이 줄어드는 게 눈에 보여서 동기가 됐어요.</p></div><div class="tItem__who"><span class="tItem__avatar">최</span><h5>최○○</h5><small>취업 준비 · OPIc 대비</small></div></div>
+        <div class="tItem"><div class="tItem__text"><span class="tItem__q"><i class="fa fa-quote-left"></i></span><p>예순이 넘어 시작했는데 선생님이 천천히 한국어로도 설명해 주셔서 부담이 없습니다. 내년 딸 가족 보러 캐나다 갈 때 공항에서 말해 보려고요.</p></div><div class="tItem__who"><span class="tItem__avatar">정</span><h5>정○○</h5><small>60대 · 시니어 영어회화</small></div></div>
+        <div class="tItem"><div class="tItem__text"><span class="tItem__q"><i class="fa fa-quote-left"></i></span><p>학원 다닐 땐 한 시간에 세 마디 하면 많이 한 거였는데, 1:1은 25분 내내 제가 말해야 해서 끝나면 진이 빠져요. 그런데 그게 느는 거더라고요.</p></div><div class="tItem__who"><span class="tItem__avatar">한</span><h5>한○○</h5><small>대학생 · 일상 회화</small></div></div>
+      </div>
+      <div class="tcar__dots" id="tcarDots"></div>
     </div>
   </div>
 </section>
 
 <!-- ── FAQ ────────────────────────────────── -->
-<section class="section faq" id="faq">
-  <div class="wrap wrap--narrow">
+<section class="section section--light" id="faq">
+  <div class="container container--narrow">
     <div class="head">
-      <p class="eyebrow">FAQ</p>
-      <h2>자주 묻는 질문</h2>
+      <p class="label">FAQ</p>
+      <h2 class="title">자주 묻는 질문</h2>
     </div>
     <div class="faq__list" id="faqList">
       <details class="faq__item" open><summary>수업료는 얼마인가요?</summary><p>수업 시간(10·25·50분), 주당 횟수, 강사 유형(원어민·이중언어)에 따라 달라집니다. 레벨테스트 후 상담 때 정확한 금액을 안내드리며, 안내 전에 결제를 요구하지 않습니다.</p></details>
@@ -319,102 +335,100 @@
 </section>
 
 <!-- ── 상담 신청 ──────────────────────────── -->
-<section class="section apply" id="apply">
-  <div class="wrap apply__grid">
-    <div class="apply__text">
-      <p class="eyebrow eyebrow--light">Contact</p>
-      <h2>무료 레벨테스트 신청</h2>
-      <p>이름과 연락처만 남겨주시면 상담 매니저가 하루 안에 연락드립니다.<br>레벨테스트와 상담은 무료이고, 결제를 권하기 전에 반드시 수업 방식을 먼저 설명드립니다.</p>
-      <ul class="apply__contact">
-        <li>📞 <a href="tel:01068321994">010-6832-1994</a></li>
-        <li>🕘 상담 가능 시간 09:00 – 21:00 (연중)</li>
-        <li>💬 문자로 "레벨테스트"라고 보내주셔도 됩니다</li>
-      </ul>
+<section class="section" id="apply">
+  <div class="container row">
+    <div class="col">
+      <p class="label">Contact Us</p>
+      <h2 class="title">무료 레벨테스트 신청</h2>
+      <p class="mb-4">이름과 연락처만 남겨주시면 상담 매니저가 하루 안에 연락드립니다. 레벨테스트와 상담은 무료이고, 결제를 권하기 전에 반드시 수업 방식을 먼저 설명드립니다.</p>
+      <div class="contact">
+        <div class="contact__item"><i class="fa fa-phone"></i><div><b>전화 상담</b><a href="tel:01068321994">010-6832-1994</a></div></div>
+        <div class="contact__item"><i class="fa fa-clock"></i><div><b>상담 시간</b><span>09:00 – 21:00 (연중)</span></div></div>
+        <div class="contact__item"><i class="fa fa-comment-sms"></i><div><b>문자 신청</b><span>"레벨테스트"라고 보내주셔도 됩니다</span></div></div>
+      </div>
     </div>
-    <form class="form" id="applyForm" novalidate>
-      <div class="form__row">
-        <label>이름 <b>*</b><input type="text" id="name" placeholder="홍길동" autocomplete="name" required></label>
-        <label>연락처 <b>*</b><input type="tel" id="phone" placeholder="010-0000-0000" autocomplete="tel" required></label>
-      </div>
-      <div class="form__row">
-        <label>수업 대상 <b>*</b>
-          <select id="target" required>
-            <option value="">선택</option>
-            <option>성인 영어회화</option>
-            <option>주니어(초·중등)</option>
-            <option>비즈니스 영어</option>
-            <option>시니어 영어회화</option>
-            <option>시험 대비(OPIc·토익스피킹 등)</option>
-          </select>
+    <div class="col">
+      <form class="form box" id="applyForm" novalidate>
+        <div class="form__row">
+          <label>이름 <b>*</b><input type="text" id="name" placeholder="홍길동" autocomplete="name" required></label>
+          <label>연락처 <b>*</b><input type="tel" id="phone" placeholder="010-0000-0000" autocomplete="tel" required></label>
+        </div>
+        <div class="form__row">
+          <label>수업 대상 <b>*</b>
+            <select id="target" required>
+              <option value="">선택</option>
+              <option>성인 영어회화</option>
+              <option>주니어(초·중등)</option>
+              <option>비즈니스 영어</option>
+              <option>시니어 영어회화</option>
+              <option>시험 대비(OPIc·토익스피킹 등)</option>
+            </select>
+          </label>
+          <label>희망 수업
+            <select id="mode">
+              <option value="">상담 때 정할게요</option>
+              <option>화상영어</option>
+              <option>전화영어</option>
+            </select>
+          </label>
+        </div>
+        <div class="form__row">
+          <label>현재 레벨(느낌대로)
+            <select id="level">
+              <option value="">잘 모르겠어요</option>
+              <option>인사 정도만</option>
+              <option>짧은 문장은 말함</option>
+              <option>일상 대화 가능</option>
+              <option>업무·토론 가능</option>
+            </select>
+          </label>
+          <label>연락 편한 시간
+            <input type="text" id="time" placeholder="예: 평일 저녁 7시 이후">
+          </label>
+        </div>
+        <label>남길 말
+          <textarea id="memo" rows="3" placeholder="목표(예: 내년 3월 OPIc IH), 아이 학년, 궁금한 점 등"></textarea>
         </label>
-        <label>희망 수업
-          <select id="mode">
-            <option value="">상담 때 정할게요</option>
-            <option>화상영어</option>
-            <option>전화영어</option>
-          </select>
-        </label>
-      </div>
-      <div class="form__row">
-        <label>현재 레벨(느낌대로)
-          <select id="level">
-            <option value="">잘 모르겠어요</option>
-            <option>인사 정도만</option>
-            <option>짧은 문장은 말함</option>
-            <option>일상 대화 가능</option>
-            <option>업무·토론 가능</option>
-          </select>
-        </label>
-        <label>연락 편한 시간
-          <input type="text" id="time" placeholder="예: 평일 저녁 7시 이후">
-        </label>
-      </div>
-      <label>남길 말
-        <textarea id="memo" rows="3" placeholder="목표(예: 내년 3월 OPIc IH), 아이 학년, 궁금한 점 등"></textarea>
-      </label>
-      <label class="form__agree"><input type="checkbox" id="agree" required> <span>상담 연락을 위한 개인정보(이름·연락처) 수집에 동의합니다. 상담 외 목적으로 쓰지 않고 요청 시 즉시 삭제합니다.</span></label>
-      <button type="submit" class="btn btn--primary btn--lg btn--full">무료 레벨테스트 신청하기</button>
-      <p class="form__ok" id="okMsg">신청이 접수되었습니다. 하루 안에 연락드리겠습니다. 급하시면 010-6832-1994 로 전화 주세요.</p>
-    </form>
+        <label class="form__agree"><input type="checkbox" id="agree" required> <span>상담 연락을 위한 개인정보(이름·연락처) 수집에 동의합니다. 상담 외 목적으로 쓰지 않고 요청 시 즉시 삭제합니다.</span></label>
+        <button type="submit" class="btn btn--primary btn--pill btn--lg btn--full">무료 레벨테스트 신청하기 <i class="fa fa-arrow-right"></i></button>
+        <p class="form__ok" id="okMsg">신청이 접수되었습니다. 하루 안에 연락드리겠습니다. 급하시면 010-6832-1994 로 전화 주세요.</p>
+      </form>
+    </div>
   </div>
 </section>
 
 <!-- ── 푸터 ───────────────────────────────── -->
 <footer class="footer">
-  <div class="wrap footer__grid">
+  <div class="container footer__grid">
     <div>
-      <div class="logo"><span class="logo__mark">E</span><span class="logo__text">나도 <em>잉글리쉬</em></span></div>
-      <p>성인·주니어·비즈니스·시니어를 위한 1:1 전화영어·화상영어. 레벨테스트로 시작점을 잡고, 매일 말하는 시간을 만들어 드립니다.</p>
+      <h4>Customer</h4>
+      <p>상담 전화 010-6832-1994<br>09:00~21:00 │ 연중무휴</p>
     </div>
     <div>
-      <h5>바로가기</h5>
-      <ul>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#process">수업 방식</a></li>
-        <li><a href="#services">대상별 프로그램</a></li>
-        <li><a href="#courses">추천 과정</a></li>
-        <li><a href="#faq">자주 묻는 질문</a></li>
-      </ul>
+      <h4>Contact</h4>
+      <p>나도 잉글리쉬 | 1:1 전화영어·화상영어<br>성인 · 주니어 · 비즈니스 · 시니어 영어회화<br>무료 레벨테스트 후 맞춤 커리큘럼으로 시작합니다</p>
     </div>
     <div>
-      <h5>문의</h5>
-      <ul>
-        <li><a href="tel:01068321994">전화: 010-6832-1994</a></li>
-        <li><a href="#apply">무료 레벨테스트 신청</a></li>
-        <li>상담 시간: 09:00 – 21:00</li>
-      </ul>
+      <h4>Menu Links</h4>
+      <p class="footer__links"><a href="#about">소개</a><a href="#services">프로그램</a><a href="#courses">추천 과정</a><a href="#faq">FAQ</a><a href="#apply">상담신청</a></p>
     </div>
   </div>
-  <div class="wrap footer__copy">© <span id="year"></span> 나도 잉글리쉬. All rights reserved.</div>
+  <div class="container"><hr><p class="footer__copy">ⓒ <span id="year"></span> 나도 잉글리쉬 All Rights Reserved.</p></div>
 </footer>
 
-<!-- ── 모바일 하단 고정 바 ─────────────────── -->
-<div class="fixbar">
-  <a href="tel:01068321994" class="fixbar__call">📞 전화 상담</a>
-  <a href="#apply" class="fixbar__apply">무료 레벨테스트 신청</a>
+<!-- ── 하단 고정 배너 ─────────────────────── -->
+<div class="fixbar" id="fixbar">
+  <div class="container fixbar__inner">
+    <span class="fixbar__text"><b>"내 실력은 어느 정도일까?"</b> 무료 레벨테스트 신청하기</span>
+    <span class="fixbar__btns">
+      <a href="tel:01068321994" class="fixbar__call"><i class="fa fa-phone"></i> 010-6832-1994</a>
+      <a href="#apply" class="fixbar__apply">신청하기 <i class="fa fa-arrow-right"></i></a>
+    </span>
+  </div>
 </div>
+<a href="#top" class="totop" id="totop" aria-label="맨 위로"><i class="fa fa-arrow-up"></i></a>
 
-<script src="script.js?v=1"></script>
+<script src="script.js?v=3"></script>
 <script src="form.js?v=2"></script>
 </body>
 </html>

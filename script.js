@@ -1,9 +1,3 @@
-// ── 헤더 스크롤 그림자 ──────────────────────
-const header = document.getElementById('header');
-const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
-onScroll();
-window.addEventListener('scroll', onScroll, { passive: true });
-
 // ── 모바일 메뉴 ────────────────────────────
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
@@ -20,35 +14,43 @@ nav.addEventListener('click', e => {
   }
 });
 
-// ── 히어로 슬라이드 (5초 자동, 화살표·점) ──
-(function heroSlider(){
-  const slides = Array.from(document.querySelectorAll('#heroTrack .hero__slide'));
-  const dotsBox = document.getElementById('heroDots');
-  if (!slides.length) return;
+// ── 공통: 페이지 넘김(슬라이드) ────────────
+function makeSlider(items, dotsBox, { auto = 0, prev, next, pause } = {}) {
   let cur = 0, timer;
-  slides.forEach((_, i) => {
+  const dots = items.map((_, i) => {
     const b = document.createElement('button');
-    b.setAttribute('aria-label', (i + 1) + '번 배너');
+    b.setAttribute('aria-label', (i + 1) + '번');
     b.addEventListener('click', () => { go(i); restart(); });
     dotsBox.appendChild(b);
+    return b;
   });
-  const dots = Array.from(dotsBox.children);
-  function go(i){
-    cur = (i + slides.length) % slides.length;
-    slides.forEach((s, k) => s.classList.toggle('is-active', k === cur));
+  function go(i) {
+    cur = (i + items.length) % items.length;
+    items.forEach((s, k) => s.classList.toggle('is-active', k === cur));
     dots.forEach((d, k) => d.classList.toggle('is-active', k === cur));
   }
-  function restart(){ clearInterval(timer); timer = setInterval(() => go(cur + 1), 5000); }
-  document.getElementById('heroPrev').addEventListener('click', () => { go(cur - 1); restart(); });
-  document.getElementById('heroNext').addEventListener('click', () => { go(cur + 1); restart(); });
-  const hero = document.getElementById('hero');
-  hero.addEventListener('mouseenter', () => clearInterval(timer));
-  hero.addEventListener('mouseleave', restart);
+  function restart() { clearInterval(timer); if (auto) timer = setInterval(() => go(cur + 1), auto); }
+  if (prev) prev.addEventListener('click', () => { go(cur - 1); restart(); });
+  if (next) next.addEventListener('click', () => { go(cur + 1); restart(); });
+  if (pause) { pause.addEventListener('mouseenter', () => clearInterval(timer)); pause.addEventListener('mouseleave', restart); }
   go(0); restart();
-})();
+}
+
+// 메인 배너 (5초 자동)
+makeSlider(
+  Array.from(document.querySelectorAll('#heroTrack .hero__slide')),
+  document.getElementById('heroDots'),
+  { auto: 5000, prev: document.getElementById('heroPrev'), next: document.getElementById('heroNext'), pause: document.getElementById('hero') }
+);
+// 후기 (7초 자동)
+makeSlider(
+  Array.from(document.querySelectorAll('#tcar .tcar__page')),
+  document.getElementById('tcarDots'),
+  { auto: 7000, pause: document.getElementById('tcar') }
+);
 
 // ── 탭 공통 (About 탭 · 서비스 탭) ─────────
-function wireTabs(rootId, tabSel, panelSel){
+function wireTabs(rootId, tabSel, panelSel) {
   const root = document.getElementById(rootId);
   if (!root) return;
   root.querySelectorAll(tabSel).forEach(tab => {
@@ -72,7 +74,7 @@ faqItems.forEach(item => {
 });
 
 // ── 스크롤 등장 애니메이션 ──────────────────
-const revealTargets = document.querySelectorAll('.card, .course, .review, .flow li, .stat, .faq__item, .head, .svc');
+const revealTargets = document.querySelectorAll('.pcard, .fbox, .course, .tItem, .fact, .faq__item, .head, .svc, .box, .img-rounded, .contact__item');
 revealTargets.forEach(el => el.classList.add('reveal'));
 const io = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
@@ -80,8 +82,14 @@ const io = new IntersectionObserver((entries, obs) => {
     entry.target.classList.add('is-in');
     obs.unobserve(entry.target);
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 revealTargets.forEach(el => io.observe(el));
+
+// ── 맨 위로 버튼 ──
+const totop = document.getElementById('totop');
+const onScroll = () => totop.classList.toggle('is-show', window.scrollY > 300);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
 
 // ── 연도 ──
 document.getElementById('year').textContent = new Date().getFullYear();
