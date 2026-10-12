@@ -1,6 +1,6 @@
 # english-conversation — 나도 잉글리쉬 (1:1 전화영어·화상영어)
 
-- 저장소: `x26589334-cpu/english-conversation` (main) · GitHub Pages · 도메인 **아직 없음** → https://x26589334-cpu.github.io/english-conversation/
+- 저장소: `x26589334-cpu/english-conversation` (main) · GitHub Pages · 도메인 **nadoglobal.co.kr**(2026-10-12 연결, CNAME 파일) · 옛 주소 https://x26589334-cpu.github.io/english-conversation/ 는 자동 이동
 - 만든 날: 2026-10-10. 참고한 사이트: plcenter.co.kr(파워잉글리시) — 구조(배너 슬라이드 → About+숫자 → 진행 과정 → Why 3칸 → 서비스 탭 → 추천 과정 4칸 → 후기 → FAQ → 상담 → 푸터)와 색(하늘 `#00baff` + 주황 `#ffa01e`)만 참고. 문구·코드는 새로 썼다.
 - 한 페이지 사이트. 파일: `index.html` · `style.css` · `script.js`(배너·후기 슬라이드, 탭, FAQ, 등장효과) · `form.js`(상담폼) · `analytics.js`(GA4, 아직 ID 없음) · `img/`(사진 12장).
 - **사진은 전부 Unsplash 무료 사진**(Unsplash License: 상업 사용·출처 표기 불필요). 2026-10-10 디자인 2차 — 참고 사이트처럼 사진 배너·하늘색 숫자 띠·테두리 상자·말풍선 후기·남색 푸터·하단 고정 배너로 재구성. 글꼴: 제목 Pretendard, 본문 나눔고딕(Google Fonts), 아이콘 Font Awesome 6(cdnjs).
@@ -13,5 +13,5 @@
 
 ## 아직 안 한 것
 - GA4 측정 ID (`analytics.js` 의 `GA_ID` 비어 있음 → 지금은 아무것도 안 보냄).
-- 도메인(CNAME) — 사용자가 정하면 `CNAME` 파일 + Pages Custom domain + 가비아 A/CNAME.
+- ~~도메인~~ 2026-10-12 nadoglobal.co.kr 연결. 가비아 DNS: A @ 185.199.108~111.153 4줄 + CNAME www → x26589334-cpu.github.io. DNS 잡힌 뒤 Pages "Enforce HTTPS" 켜기.
 - 데일리 자동게시 미등록(`사이트관리/데일리/설정.json`). 블로그 폴더도 아직 없음.
