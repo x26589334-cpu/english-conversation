@@ -3,7 +3,7 @@
    -----------------------------------------------------------
    과외·인천과외·키즈튜터·채용 등과 같은 **허브 웹앱 하나**로 보냅니다.
    → 구글 "웹 문의" 시트(ID 1UUS6le8…)의 **"영어회화" 탭**에 저장
-     (폼이 sheet=영어회화 를 함께 보내고, 스크립트가 그 탭을 찾거나 자동 생성)
+     (폼이 사이트=영어회화 를 보내고, 탭("기존")은 허브의 TAB_OF 표가 정한다 — 2026-10-27 허브 v5)
    ⚠️ 허브 배포본에는 허용 탭 목록이 없어서 여기 값이 그대로 탭 이름이 됩니다.
      오타 나면 기본 탭으로 안 가고 새 탭이 조용히 생김. 탭 이름 변경은 사용자 확인 후.
      실제 스크립트는 구글 서버에 있음(사이트관리/도구/허브_통합.gs 가 참고 사본).
@@ -33,9 +33,10 @@ function _sendToSheet(payload){
     if(!document.getElementById("agree").checked){ alert("개인정보 수집에 동의해 주셔야 상담 연락을 드릴 수 있어요."); return; }
 
     const payload = {
-      sheet: "영어회화",
+      sheet: "기존",
+      사이트: "영어회화",
       _form: "영어회화-무료레벨테스트신청",
-      _page: location.pathname,
+      신청페이지: location.origin + location.pathname,
       _time: new Date().toLocaleString("ko-KR"),
       이름: _val("name"), 연락처: _val("phone"), 수업대상: _val("target"),
       희망수업: _val("mode"), 현재레벨: _val("level"), 연락시간: _val("time"), 남길말: _val("memo")
